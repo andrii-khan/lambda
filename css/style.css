@@ -213,6 +213,7 @@ textarea {
 	background: url(../img/dekor-gold.png) no-repeat 50% 100%;
 	padding-bottom: 30px;
 	margin-bottom: 28px;
+	text-align: center;
 }
 .ba-about {
 	padding: 50px 0 30px;
@@ -227,4 +228,61 @@ textarea {
 .ba-dish {
 	margin-left: -80px;
 	max-width: initial;
+}
+.ba-food-menu {
+	margin:0 auto 58px;
+	max-width: 430px;
+
+}
+.ba-food-menu__title {
+	margin-bottom: 28px;
+}
+.ba-food-menu__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.ba-menu-dish + .ba-menu-dish {
+	margin-top: 30px;
+}
+.ba-menu-dish--special {
+	position: relative;
+}
+.ba-menu-dish--special::before {
+	content: '';
+	position: absolute;
+	border: 1px solid rgba(200,159,45,0.6);
+	top: -8px;
+	right: -13px;
+	left: -13px;
+	bottom: -8px;
+}
+.ba-menu-dish--special::after {
+	content: attr(data-tip);
+	position: absolute;
+	right: -13px;
+	bottom: calc(100% + 8px);
+	background: rgba(200, 159, 45, 0.6);
+	padding: 0 10px;
+	font-size: 14px;
+	color: #fff;
+}
+.ba-menu-dish p {
+	margin: 0;
+}
+.ba-menu-dish__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(200,159,45,0.6);
+	color: #c89f2d;
+	padding-bottom: 3px;
+	margin-bottom: 8px;
+}
+.ba-menu-dish__title {
+	margin: 0;
+	font-size: 21px;
+}
+.ba-menu-dish__price {
+	font: 400 21px/1 'Yeseva One', cursive;
 }
